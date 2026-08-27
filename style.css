@@ -1,0 +1,124 @@
+/* General body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #3a5f3a;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2e4730;
+    border-radius: 5px;
+}
+
+/* Home page hero section */
+body.home .logo-banner {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: relative;
+}
+
+body.home .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body.home .hero-content .logo {
+    max-width: 80%;
+    max-height: 60vh;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+body.home .hero-content h1 {
+    color: #fff;
+    background-color: rgba(0,0,0,0.8);
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+}
+
+/* Small logo banner for other pages */
+.logo-banner-small {
+    background-color: black;
+    padding: 20px 0;
+    margin-top: 80px; /* push below fixed nav */
+}
+
+.logo-small {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Main headers on all other pages */
+h1 {
+    color: #3a5f3a;
+    background-color: rgba(0,0,0,0.05);
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Products page grid */
+.products-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: #f0f0f0;
+    border: 2px solid #3a5f3a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+
+.product h2 {
+    color: #3a5f3a;
+    margin-bottom: 10px;
+}
+
+.product p {
+    color: #333;
+}
